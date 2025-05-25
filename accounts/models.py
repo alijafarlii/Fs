@@ -1,7 +1,7 @@
 from django.db import models
 
-from django.contrib.auth.models import AbtractUser
+from django.contrib.auth.models import AbstractUser
 
-class User(models.Model):
+class User(AbstractUser):
     image = models.ImageField(upload_to='images/' ,null=True, blank=True)
     info = models.TextField()
